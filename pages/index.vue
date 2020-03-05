@@ -1,92 +1,132 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
+  <div>
+    <section>
+      <About />
+    </section>
+    <section>
+      <About2 />
+    </section>
+    <section>
+      <div>
+        <SlideGroup />
       </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+    </section>
+
+    <section>
+      <v-container pt-9>
+        <div>
+          <iframe
+            allowfullscreen="true"
+            title="panorama"
+            scrolling="no"
+            width="100%"
+            height="700"
+            src="https://kuula.co/share/7lcgK/collection/7fyMs"
+            style="border: 0px;"
+          ></iframe>
+        </div>
+      </v-container>
+    </section>
+    <section>
+      <div>
+        <Blog2 />
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+import { validationMixin } from "vuelidate";
+import { required, maxLength, email } from "vuelidate/lib/validators";
+import Services from "~/components/Services.vue";
+import Blog from "~/components/Blog.vue";
+import Blog2 from "~/components/Blog2.vue";
+import Footer from "~/components/Footer.vue";
+import SlideGroup from "~/components/SlideGroup.vue";
+import Banner from "~/components/Banner.vue";
+import SectionHeader from "~/components/SectionHeader.vue";
+import SlideGroup2 from "~/components/SlideGroup2.vue";
+import About from "~/components/About.vue";
+import About2 from "~/components/About2.vue";
 
 export default {
+  layout: "landing",
+  mixins: [validationMixin],
+
+  validations: {
+    name: { required, maxLength: maxLength(10) },
+    email: { required, email },
+    select: { required },
+    checkbox: {
+      checked(val) {
+        return val;
+      }
+    }
+  },
   components: {
-    Logo,
-    VuetifyLogo
+    Services,
+    Footer,
+    SlideGroup,
+    Blog,
+    Blog2,
+    Banner,
+    SectionHeader,
+    SlideGroup2,
+    About,
+    About2
+  },
+
+  data: () => ({
+    name: null,
+    email: null,
+    phone: null,
+    select: null,
+
+    items: ["Media", "Store Information", "General Info", "Business"],
+    checkbox: false
+  }),
+
+  computed: {
+    checkboxErrors() {
+      const errors = [];
+      if (!this.$v.checkbox.$dirty) return errors;
+      !this.$v.checkbox.checked && errors.push("You must agree to continue!");
+      return errors;
+    },
+    selectErrors() {
+      const errors = [];
+      if (!this.$v.select.$dirty) return errors;
+      !this.$v.select.required && errors.push("Item is required");
+      return errors;
+    },
+    nameErrors() {
+      const errors = [];
+      if (!this.$v.name.$dirty) return errors;
+      !this.$v.name.maxLength &&
+        errors.push("Name must be at most 10 characters long");
+      !this.$v.name.required && errors.push("Name is required.");
+      return errors;
+    },
+    emailErrors() {
+      const errors = [];
+      if (!this.$v.email.$dirty) return errors;
+      !this.$v.email.email && errors.push("Must be valid e-mail");
+      !this.$v.email.required && errors.push("E-mail is required");
+      return errors;
+    }
+  },
+
+  methods: {
+    submit() {
+      this.$v.$touch();
+    },
+    clear() {
+      this.$v.$reset();
+      this.name = "";
+      this.email = "";
+      this.select = null;
+      this.checkbox = false;
+    }
   }
-}
+};
 </script>
