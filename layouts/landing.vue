@@ -36,8 +36,9 @@ import netlify from "~/components/netlify-form.vue";
 import AppBar from "~/components/AppBar.vue";
 import Banner from "~/components/Banner.vue";
 import Jumbrotron from "~/components/Jumbrotron.vue";
+import Logo from "~/components/Logo.vue";
 export default {
-  components: { Footer, netlify, AppBar, Banner, Jumbrotron },
+  components: { Footer, netlify, AppBar, Banner, Jumbrotron, Logo },
 
   data() {
     return {

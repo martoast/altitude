@@ -2,7 +2,7 @@
   <v-footer dark height="auto" padless>
     <v-row class="ma-0">
       <v-col class="blue-grey darken-3 pa-5" cols="12" md="3">
-        <h3 class="headline mb-3">Peninsula</h3>
+        <h3 class="headline mb-3">Altitude Exports</h3>
         <ul class="body-1 pl-0">
           <li v-for="(c, i) in company" :key="i" class="mb-3">
             <a class="transition-swing" href="#" v-text="c" />
@@ -17,10 +17,9 @@
         </v-row>
       </v-col>
 
-      <v-col
-        class="text-center blue-grey darken-4 pa-3"
-        cols="12"
-      >&copy; 2020 Peninsula — All Rights reserved.</v-col>
+      <v-col class="text-center blue-grey darken-4 pa-3" cols="12"
+        >&copy; 2020 Altitude Exports — All Rights reserved.</v-col
+      >
     </v-row>
   </v-footer>
 </template>
@@ -28,30 +27,21 @@
 <script>
 export default {
   data: () => ({
-    categories: [
-      "Exclusives",
-      "Whats'new",
-      "Testimonials",
-      "Press Room",
-      "Partners",
-      "New in Tijuana",
-      "Macarthy Equipment",
-      "Elite Construction Management"
-    ],
-    company: ["Services", "Projects", "Our Team", "Commitment to the Community"]
+    categories: ["Exclusives", "Whats'new", "Testimonials", "New in Tijuana"],
+    company: ["Services", "Projects"]
   })
 };
 </script>
 
 <style lang="sass">
-  .v-application .v-footer
-    ul
-      list-style-type: none
+.v-application .v-footer
+  ul
+    list-style-type: none
 
-    a
-      color: white
-      text-decoration: none
+  a
+    color: white
+    text-decoration: none
 
-      &:hover
-        color: grey
+    &:hover
+      color: grey
 </style>

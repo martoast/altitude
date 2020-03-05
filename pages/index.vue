@@ -17,6 +17,55 @@
         <Blog2 />
       </div>
     </section>
+    <section>
+      <SectionHeader header="Contact Us" sub-header="Get a Free quote today!" />
+      <v-form
+        name="contactus"
+        action="/thanks"
+        method="post"
+        netlify
+        netlify-honeypot="bot-field"
+      >
+        <v-container fill-height>
+          <v-row>
+            <v-col cols="12">
+              <v-text-field
+                label="Your Name*"
+                for="name"
+                type="text"
+                name="name"
+                outlined
+                required
+              />
+            </v-col>
+            <v-col cols="12">
+              <v-text-field
+                label="Your Email*"
+                for="email"
+                type="email"
+                name="email"
+                required
+                outlined
+              />
+            </v-col>
+
+            <v-col cols="12">
+              <v-textarea
+                label="Your Message*"
+                for="message"
+                name="message"
+                required
+                outlined
+              />
+            </v-col>
+
+            <v-col text-center>
+              <v-btn type="submit" value="Send message">Send</v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-form>
+    </section>
   </div>
 </template>
 
