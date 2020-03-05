@@ -47,21 +47,27 @@ export default {
       {
         title: "Innovative Spaces",
         link: "blog/bestdining",
-        src: require("@/assets/COMINGSOON.jpg"),
-        flex: 12
+        src: require("@/assets/watertruck.jpeg"),
+        flex: 6
       },
-
       {
-        title: "Best dining in town",
+        title: "Innovative Spaces",
         link: "blog/bestdining",
-        src: require("@/assets/WEB.jpg"),
+        src: require("@/assets/bus.jpeg"),
         flex: 6
       },
 
       {
         title: "Best dining in town",
         link: "blog/bestdining",
-        src: require("@/assets/TRERRAZA.jpg"),
+        src: require("@/assets/freightliner2.jpeg"),
+        flex: 6
+      },
+
+      {
+        title: "Best dining in town",
+        link: "blog/bestdining",
+        src: require("@/assets/watertruck2.jpeg"),
         flex: 6
       }
     ]

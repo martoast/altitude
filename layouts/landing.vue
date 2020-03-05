@@ -3,7 +3,7 @@
     <AppBar />
 
     <v-img
-      :src="require('@/assets/TRERRAZA.jpg')"
+      src="https://pictures.alignable.com/eyJidWNrZXQiOiJhbGlnbmFibGV3ZWItcHJvZHVjdGlvbiIsImtleSI6InNlcnZpY2VzL3BpY3R1cmVzL21lZGl1bS8xODIzNS8xNDQ1NjQyNjYwX3VuZGVmaW5lZCIsImVkaXRzIjp7fX0="
       height="100vh"
       gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
     >

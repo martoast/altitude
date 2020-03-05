@@ -9,7 +9,7 @@
       dark=""
     >
       <VuetifyLogo />
-      <v-toolbar-title>Peninsula Plaza Version 0.7</v-toolbar-title>
+      <v-toolbar-title>Altitude Exports</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn v-for="item in menu" :key="item.icon" :to="item.link" text>{{

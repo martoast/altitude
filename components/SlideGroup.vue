@@ -2,15 +2,18 @@
   <div>
     <div>
       <SectionHeader header="Exclusives" sub-header="Amazing Store Selection" />
-      <v-sheet class="mx-auto" max-width="800" elevation="8" color="blue-grey lighten-5">
-        <AutoComplete />
+      <v-sheet class="mx-auto" elevation="8" color="blue-grey lighten-5">
         <v-slide-group show-arrows light>
-          <v-slide-item v-for="n in stores" :key="n" v-slot:default="{ active, toggle }">
+          <v-slide-item
+            v-for="n in stores"
+            :key="n"
+            v-slot:default="{ active, toggle }"
+          >
             <v-hover v-slot:default="{ hover }">
               <v-card
                 color="blue-grey lighten-5"
-                height="100"
-                width="100"
+                max-height="200px"
+                max-width="200px"
                 :elevation="hover ? 12 : 2"
                 :class="{ 'on-hover': hover }"
               >
@@ -34,8 +37,8 @@ export default {
   data: () => ({
     model: null,
     stores: [
-      "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/tenantlogos/279.png?yocs=D_H_",
-      "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/tenantlogos/3661.png?yocs=D_H_",
+      "https://logoeps.com/wp-content/uploads/2011/08/john-deere-logo-vector-01.png",
+      "https://seeklogo.net/wp-content/uploads/2013/01/caterpillar-.eps-logo-vector.png",
       "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/tenantlogos/2370.png?yocs=D_H_",
       "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/tenantlogos/6687.png?yocs=D_H_",
       "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/tenantlogos/20592.png?yocs=D_H_",
