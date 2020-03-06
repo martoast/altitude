@@ -7,13 +7,15 @@
           <v-row dense>
             <v-col v-for="card in cards" :key="card.src" :cols="card.flex">
               <v-hover v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 16 : 2" :to="card.link">
+                <v-card :elevation="hover ? 16 : 2">
                   <v-img
                     :src="card.src"
                     class="white--text align-end"
                     gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                     max-height="450px"
                     min-height="300"
+                    @click.stop="dialog = true"
+                    @click="OpenModal(card.src)"
                   >
                     <v-expand-transition>
                       <div
@@ -34,6 +36,11 @@
         </v-container>
       </v-card>
     </v-container>
+    <v-dialog v-model="dialog">
+      <v-card>
+        <v-img :src="this.ModalUrl" max-height="100%" max-width="100%"></v-img>
+      </v-card>
+    </v-dialog>
   </div>
 </template>
 <script>
@@ -43,6 +50,8 @@ export default {
     SectionHeader
   },
   data: () => ({
+    dialog: false,
+    ModalUrl: null,
     cards: [
       {
         title: "Innovative Spaces",
@@ -69,9 +78,26 @@ export default {
         link: "blog/bestdining",
         src: require("@/assets/watertruck2.jpeg"),
         flex: 6
+      },
+      {
+        title: "Best dining in town",
+        link: "blog/bestdining",
+        src: require("@/assets/trailer.jpeg"),
+        flex: 6
+      },
+      {
+        title: "Best dining in town",
+        link: "blog/bestdining",
+        src: require("@/assets/freightliner.jpeg"),
+        flex: 6
       }
     ]
-  })
+  }),
+  methods: {
+    OpenModal(url) {
+      this.ModalUrl = url;
+    }
+  }
 };
 </script>
 <style>

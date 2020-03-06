@@ -54,7 +54,7 @@
 <script>
 export default {
   data: () => ({
-    src: require("@/assets/watertruck.jpeg"),
+    src: require("@/assets/import.png"),
     highlights: [
       "Architecture development",
       "Cloud computing",
