@@ -1,30 +1,36 @@
 <template>
+
   <div>
-    <div>
-      <SectionHeader header="Las Mejores Marcas" sub-header="Gran Seleccion" />
-      <v-sheet class="mx-auto" elevation="8" color="blue-grey lighten-5">
-        <v-slide-group show-arrows light>
-          <v-slide-item
-            v-for="n in stores"
-            :key="n"
-            v-slot:default="{ active, toggle }"
+    <SectionHeader
+      header="Las Mejores Marcas"
+      sub-header="Gran Seleccion"
+    />
+
+    <v-slide-group show-arrows>
+      <v-slide-item
+        v-for="n in stores"
+        :key="n"
+        v-slot:default="{ active, toggle }"
+      >
+        <v-hover v-slot:default="{ hover }">
+          <v-card
+            color="blue-grey lighten-5"
+            max-height="200px"
+            max-width="200px"
+            :elevation="hover ? 12 : 2"
+            :class="{ 'on-hover': hover }"
           >
-            <v-hover v-slot:default="{ hover }">
-              <v-card
-                color="blue-grey lighten-5"
-                max-height="200px"
-                max-width="200px"
-                :elevation="hover ? 12 : 2"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-img :src="n" @click="toggle"></v-img>
-              </v-card>
-            </v-hover>
-          </v-slide-item>
-        </v-slide-group>
-      </v-sheet>
-    </div>
+            <v-img
+              :src="n"
+              @click="toggle"
+            ></v-img>
+          </v-card>
+        </v-hover>
+      </v-slide-item>
+    </v-slide-group>
+
   </div>
+
 </template>
 <script>
 import AutoComplete from "~/components/AutoComplete.vue";
