@@ -1,9 +1,17 @@
 <template>
   <div>
+    <SectionHeader
+      header="Welcome"
+      sub-header="Gran Seleccion"
+    />
     <section class="white">
       <v-container class="hidden-md-and-down">
         <v-row>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -30,11 +38,17 @@
               pellentesque eu, pretium quis, sem.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large
-              >Learn More</v-btn
-            >
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+            >Learn More</v-btn>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <v-card>
               <v-img
                 :src="this.src"
@@ -52,7 +66,11 @@
 </template>
 
 <script>
+import SectionHeader from "~/components/SectionHeader.vue";
 export default {
+  components: {
+    SectionHeader
+  },
   data: () => ({
     src: require("@/assets/import.png"),
     highlights: [

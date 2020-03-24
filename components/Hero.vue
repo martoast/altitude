@@ -1,0 +1,85 @@
+<template>
+  <div>
+    <v-img
+      src="https://pictures.alignable.com/eyJidWNrZXQiOiJhbGlnbmFibGV3ZWItcHJvZHVjdGlvbiIsImtleSI6InNlcnZpY2VzL3BpY3R1cmVzL21lZGl1bS8xODIzNS8xNDQ1NjQyNjYwX3VuZGVmaW5lZCIsImVkaXRzIjp7fX0="
+      height="100vh"
+      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+    >
+      <div class="hidden-md-and-down">
+        <VuetifyLogo />
+      </div>
+
+      <v-container fill-height>
+        <v-card
+          class="mx-auto"
+          max-width="800"
+          outlined
+          color="transparent"
+          dark
+        >
+          <div class="hidden-md-and-up">
+            <v-row justify="center">
+              <VuetifyLogo />
+            </v-row>
+          </div>
+          <v-row
+            justify="center"
+            align="center"
+          >
+            <h1 class="mb-4 display-2 text-center">Altitude Exports Inc.</h1>
+          </v-row>
+
+          <div>
+            <v-row
+              justify="center"
+              align="center"
+            >
+              <h2 class="title font-weight-light text-center">
+                <strong>
+                  Todo lo que necesitas a
+                  <br class="hidden-md-and-up" />10 minutos de tu casa.
+                </strong>
+              </h2>
+            </v-row>
+          </div>
+
+          <v-row justify="center">
+            <h3>
+              <strong>Shop | Live | Work | Play</strong>
+            </h3>
+          </v-row>
+
+          <div class="py-4" />
+
+          <v-row justify="center">
+            <v-btn
+              class="text--primary my-2"
+              color="white"
+              large
+              min-width="175"
+              rounded
+              @click="$vuetify.goTo('#contact')"
+            >Solicitar Info</v-btn>
+          </v-row>
+
+        </v-card>
+      </v-container>
+    </v-img>
+
+  </div>
+
+</template>
+
+<script>
+import VuetifyLogo from "~/components/VuetifyLogo.vue";
+export default {
+  components: {
+    VuetifyLogo
+  },
+  computed: {
+    namespace() {
+      return this.$route.name;
+    }
+  }
+};
+</script>

@@ -2,19 +2,7 @@
   <v-app>
     <AppBar />
 
-    <v-img
-      src="https://pictures.alignable.com/eyJidWNrZXQiOiJhbGlnbmFibGV3ZWItcHJvZHVjdGlvbiIsImtleSI6InNlcnZpY2VzL3BpY3R1cmVzL21lZGl1bS8xODIzNS8xNDQ1NjQyNjYwX3VuZGVmaW5lZCIsImVkaXRzIjp7fX0="
-      height="100vh"
-      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-    >
-      <v-row align="center" justify="center">
-        <div>
-          <v-container pt-12>
-            <netlify />
-          </v-container>
-        </div>
-      </v-row>
-    </v-img>
+    <Hero />
 
     <!-- <div class="hidden-sm-and-down">
       <Banner />
@@ -37,8 +25,9 @@ import AppBar from "~/components/AppBar.vue";
 import Banner from "~/components/Banner.vue";
 import Jumbrotron from "~/components/Jumbrotron.vue";
 import Logo from "~/components/Logo.vue";
+import Hero from "~/components/Hero.vue";
 export default {
-  components: { Footer, netlify, AppBar, Banner, Jumbrotron, Logo },
+  components: { Footer, netlify, AppBar, Banner, Jumbrotron, Logo, Hero },
 
   data() {
     return {

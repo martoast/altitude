@@ -3,7 +3,10 @@
     <section class="white">
       <v-container>
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <v-card>
               <v-img
                 :src="this.src"
@@ -22,12 +25,16 @@
               </v-img>
             </v-card>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
             >
-              My name is Alex Martos.
+              My name is shit.
               <br />I want to design your next infrastructure.
             </h2>
 
@@ -49,9 +56,12 @@
               pellentesque eu, pretium quis, sem.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large
-              >Learn More</v-btn
-            >
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+            >Learn More</v-btn>
           </v-col>
         </v-row>
       </v-container>

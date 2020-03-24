@@ -1,9 +1,16 @@
 <template>
   <div>
+    <SectionHeader
+      header="Welcome"
+      sub-header="Gran Seleccion"
+    />
     <section>
       <v-container>
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col
+            cols="12"
+            md="6"
+          >
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -29,13 +36,25 @@
               pellentesque eu, pretium quis, sem.
             </p>
 
-            <v-btn outlined color="primary" class="px-5" large>
+            <v-btn
+              outlined
+              color="primary"
+              class="px-5"
+              large
+            >
               Read More
             </v-btn>
           </v-col>
-          <v-col cols="12" md="5" offset-md="1">
+          <v-col
+            cols="12"
+            md="5"
+            offset-md="1"
+          >
             <v-card>
-              <v-img :src="require('@/assets/arialrender.png')" height="500">
+              <v-img
+                :src="require('@/assets/arialrender.png')"
+                height="500"
+              >
               </v-img>
             </v-card>
           </v-col>
@@ -46,8 +65,17 @@
     <section>
       <v-container>
         <v-row>
-          <v-col v-for="(highlight, i) in highlights" :key="i" cols="12" md="4">
-            <v-card class="mx-n3" color="transparent" flat>
+          <v-col
+            v-for="(highlight, i) in highlights"
+            :key="i"
+            cols="12"
+            md="4"
+          >
+            <v-card
+              class="mx-n3"
+              color="transparent"
+              flat
+            >
               <v-card-title v-text="highlight" />
               <v-card-text>
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -71,9 +99,19 @@
             md="3"
           >
             <div class="text-center">
-              <v-icon size="64" class="mb-3" v-text="icon" />
-              <div class="display-2 font-weight-bold mb-2" v-text="number" />
-              <div class="text-uppercase" v-text="name" />
+              <v-icon
+                size="64"
+                class="mb-3"
+                v-text="icon"
+              />
+              <div
+                class="display-2 font-weight-bold mb-2"
+                v-text="number"
+              />
+              <div
+                class="text-uppercase"
+                v-text="name"
+              />
             </div>
           </v-col>
         </v-row>
@@ -83,7 +121,11 @@
 </template>
 
 <script>
+import SectionHeader from "~/components/SectionHeader.vue";
 export default {
+  components: {
+    SectionHeader
+  },
   data: () => ({
     highlights: [
       "Architecture development",

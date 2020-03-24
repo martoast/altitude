@@ -6,11 +6,12 @@
     <section>
       <About2 />
     </section>
-    <section>
+
+    <!-- <section>
 
       <SlideGroup />
 
-    </section>
+    </section> -->
 
     <section>
       <div>
@@ -18,59 +19,7 @@
       </div>
     </section>
     <section>
-      <SectionHeader
-        header="Contact Us"
-        sub-header="Get a Free quote today!"
-      />
-      <v-form
-        name="contactus"
-        action="/thanks"
-        method="post"
-        netlify
-        netlify-honeypot="bot-field"
-      >
-        <v-container fill-height>
-          <v-row>
-            <v-col cols="12">
-              <v-text-field
-                label="Your Name*"
-                for="name"
-                type="text"
-                name="name"
-                outlined
-                required
-              />
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
-                label="Your Email*"
-                for="email"
-                type="email"
-                name="email"
-                required
-                outlined
-              />
-            </v-col>
-
-            <v-col cols="12">
-              <v-textarea
-                label="Your Message*"
-                for="message"
-                name="message"
-                required
-                outlined
-              />
-            </v-col>
-
-            <v-col text-center>
-              <v-btn
-                type="submit"
-                value="Send message"
-              >Send</v-btn>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-form>
+      <ContactUs />
     </section>
     <section>
       <v-simple-table>
@@ -113,6 +62,8 @@ import SectionHeader from "~/components/SectionHeader.vue";
 import SlideGroup2 from "~/components/SlideGroup2.vue";
 import About from "~/components/About.vue";
 import About2 from "~/components/About2.vue";
+import Netlify from "~/components/netlify-form.vue";
+import ContactUs from "~/components/ContactUs.vue";
 
 export default {
   layout: "landing",
@@ -138,7 +89,9 @@ export default {
     SectionHeader,
     SlideGroup2,
     About,
-    About2
+    About2,
+    Netlify,
+    ContactUs
   },
 
   data: () => ({
