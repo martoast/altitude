@@ -18,7 +18,7 @@
         <Blog2 />
       </div>
     </section>
-    <section>
+    <section id="contact">
       <ContactUs />
     </section>
     <section>

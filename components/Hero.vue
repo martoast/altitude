@@ -17,11 +17,11 @@
           color="transparent"
           dark
         >
-          <div class="hidden-md-and-up">
+          <!-- <div class="hidden-md-and-up">
             <v-row justify="center">
               <VuetifyLogo />
             </v-row>
-          </div>
+          </div> -->
           <v-row
             justify="center"
             align="center"
