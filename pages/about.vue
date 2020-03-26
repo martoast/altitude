@@ -19,21 +19,14 @@
             </h2>
 
             <p class="subtitle-1">
-              Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
-              vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
-              pellentesque mollis, felis nunc ultrices eros, sed gravida augue
-              augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
-              adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
-              id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
-              pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
-              ullamcorper mauris at ligula.
+              Somos una empresa familiar localizada en Tijuana con 15
+              años de experiencia en la venta y exportacion de maquinaria de Estados Unidos a Mexico.
+              Nuestro pricipal objetivo es ayudar a nuestros clientes a encontrar maquinaria en excelentes condiciones, a muy buen precio y facilitando los tramites de envio.
             </p>
             <p class="mb-5">
-              Praesent porttitor, nulla vitae posuere iaculis, arcu nisl
-              dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit
-              risus. Donec vitae sapien ut libero venenatis faucibus. In hac
-              habitasse platea dictumst. Donec quam felis, ultricies nec,
-              pellentesque eu, pretium quis, sem.
+              Nuestros años de experiencia en la compra y venta de maquinaria nos a permitido tener una amplia gama
+              de proveedores por todo el territorio Americano, lo cual nos a ayudado a encontrar todo tipo de maquinaria
+              especializada para nuestros clientes.
             </p>
 
             <v-btn

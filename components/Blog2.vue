@@ -1,11 +1,18 @@
 <template>
   <div>
     <v-container pt-12>
-      <SectionHeader header="Exclusives" sub-header="What's New" />
+      <SectionHeader sub-header="Te ayudamos a encontrar el mejor equipo y maquinaria para tu empresa." />
       <v-card class="mx-auto">
-        <v-container fluid pt-6>
+        <v-container
+          fluid
+          pt-6
+        >
           <v-row dense>
-            <v-col v-for="card in cards" :key="card.src" :cols="card.flex">
+            <v-col
+              v-for="card in cards"
+              :key="card.src"
+              :cols="card.flex"
+            >
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2">
                   <v-img
@@ -38,7 +45,11 @@
     </v-container>
     <v-dialog v-model="dialog">
       <v-card>
-        <v-img :src="this.ModalUrl" max-height="100%" max-width="100%"></v-img>
+        <v-img
+          :src="this.ModalUrl"
+          max-height="100%"
+          max-width="100%"
+        ></v-img>
       </v-card>
     </v-dialog>
   </div>

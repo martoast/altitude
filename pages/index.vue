@@ -3,9 +3,9 @@
     <section>
       <About />
     </section>
-    <section>
+    <!-- <section>
       <About2 />
-    </section>
+    </section> -->
 
     <!-- <section>
 

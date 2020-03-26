@@ -26,7 +26,7 @@
             justify="center"
             align="center"
           >
-            <h1 class="mb-4 display-2 text-center">Altitude Exports Inc.</h1>
+            <h1 class="mb-4 display-2 text-center">Altitude Exports Mexico</h1>
           </v-row>
 
           <div>
@@ -36,8 +36,7 @@
             >
               <h2 class="title font-weight-light text-center">
                 <strong>
-                  Todo lo que necesitas a
-                  <br class="hidden-md-and-up" />10 minutos de tu casa.
+                  Vendemos Equipo Nuevo y Usado.
                 </strong>
               </h2>
             </v-row>

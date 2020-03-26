@@ -2,14 +2,14 @@
   <div>
     <v-app-bar
       :clipped-left="clipped"
-      color="blue-grey"
+      color="white"
       fixed
       app
       height="70px"
-      dark=""
+      light
     >
       <VuetifyLogo />
-      <v-toolbar-title>Altitude Exports Inc</v-toolbar-title>
+      <v-toolbar-title>Altitude Exports Mexico</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
