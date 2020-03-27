@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-container pt-12>
-      <SectionHeader sub-header="Te ayudamos a encontrar el mejor equipo y maquinaria para tu empresa." />
+      <SectionHeader sub-header="Te ayudamos a encontrar el mejor equipo y maquinaria para tu empresa de acuerdo a tus necesidades." />
       <v-card class="mx-auto">
         <v-container
           fluid

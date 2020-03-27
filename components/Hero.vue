@@ -26,7 +26,7 @@
             justify="center"
             align="center"
           >
-            <h1 class="mb-4 display-2 text-center">Altitude Exports Mexico</h1>
+            <h1 class="mb-4 display-2 text-center">Venta de todo tipo de Maquinaria y Equipos</h1>
           </v-row>
 
           <div>
