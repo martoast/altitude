@@ -1,9 +1,25 @@
 <template>
-  <v-container pt-12 fill-height>
-    <form name="contactus" action="/thanks" method="post" netlify netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contactus" />
+  <v-container
+    pt-12
+    fill-height
+  >
+    <form
+      name="contactus"
+      action="/thanks"
+      method="post"
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      <input
+        type="hidden"
+        name="form-name"
+        value="contactus"
+      />
       <v-container fill-height>
-        <v-card color="rgb(245,245,245, 0.4)">
+        <v-card
+          color="rgb(245,245,245, 0.4)"
+          flat
+        >
           <v-row>
             <v-col cols="12">
               <div>
@@ -47,7 +63,11 @@
             <div>
               <v-container>
                 <v-col text-center>
-                  <v-btn type="submit" value="Send message" color="success">Send</v-btn>
+                  <v-btn
+                    type="submit"
+                    value="Send message"
+                    color="primary"
+                  >Send</v-btn>
                 </v-col>
               </v-container>
             </div>

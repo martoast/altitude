@@ -42,12 +42,6 @@
             </v-row>
           </div>
 
-          <v-row justify="center">
-            <h3>
-              <strong>Shop | Live | Work | Play</strong>
-            </h3>
-          </v-row>
-
           <div class="py-4" />
 
           <v-row justify="center">
@@ -59,6 +53,17 @@
               rounded
               @click="$vuetify.goTo('#contact')"
             >Solicitar Info</v-btn>
+            <v-btn
+              class="text--primary my-2"
+              color="white"
+              large
+              min-width="175"
+              rounded
+              href="tel: +1 (619) 888-5258"
+            >
+              <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
+              CALL NOW
+            </v-btn>
           </v-row>
 
         </v-card>

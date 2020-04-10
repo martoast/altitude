@@ -1,7 +1,11 @@
 <template>
-  <v-footer dark height="auto" padless>
+  <v-footer
+    dark
+    height="auto"
+    padless
+  >
     <v-row class="ma-0">
-      <v-col class="blue-grey darken-3 pa-5" cols="12" md="3">
+      <!-- <v-col class="blue-grey darken-3 pa-5" cols="12" md="3">
         <h3 class="headline mb-3">Altitude Exports</h3>
         <ul class="body-1 pl-0">
           <li v-for="(c, i) in company" :key="i" class="mb-3">
@@ -15,11 +19,12 @@
             <a href="#" v-text="category" />
           </v-col>
         </v-row>
-      </v-col>
+      </v-col> -->
 
-      <v-col class="text-center blue-grey darken-4 pa-3" cols="12"
-        >&copy; 2020 Altitude Exports — All Rights reserved.</v-col
-      >
+      <v-col
+        class="text-center blue-grey darken-4 pa-3"
+        cols="12"
+      >&copy; 2020 Altitude Exports — All Rights reserved.</v-col>
     </v-row>
   </v-footer>
 </template>
