@@ -80,14 +80,14 @@ export default {
       {
         title: "Best dining in town",
         link: "blog/bestdining",
-        src: require("@/assets/freightliner2.jpeg"),
+        src: require("@/assets/forklift.jpeg"),
         flex: 6
       },
 
       {
         title: "Best dining in town",
         link: "blog/bestdining",
-        src: require("@/assets/watertruck2.jpeg"),
+        src: require("@/assets/tractor.jpeg"),
         flex: 6
       },
       {
