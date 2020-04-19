@@ -59,7 +59,7 @@
               large
               min-width="175"
               rounded
-              href="tel: +1 (619) 888-5258"
+              href="tel: +1 (619) 559-1920"
             >
               <v-icon class="pa-2">mdi-phone-outgoing</v-icon>
               CALL NOW

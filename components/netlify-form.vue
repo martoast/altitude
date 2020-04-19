@@ -30,7 +30,7 @@
                   name="name"
                   outlined
                   required
-                  color="white"
+                  color="primary"
                 />
               </div>
             </v-col>
@@ -43,7 +43,7 @@
                   name="email"
                   required
                   outlined
-                  color="white"
+                  color="primary"
                 />
               </div>
             </v-col>
@@ -56,7 +56,7 @@
                   name="message"
                   required
                   outlined
-                  color="white"
+                  color="primary"
                 />
               </div>
             </v-col>
