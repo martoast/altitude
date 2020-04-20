@@ -21,7 +21,7 @@
 
             </h2>
 
-            <h2 class="display-1 font-weight-light">
+            <h2 class="headline font-weight-light">
               Ofrecer el mejor servicio de compra y venta de equipo y maquinaria que satisfaga las
               necesidades de nuestros clientes y desarollar una logistica para trasporte
               importación y entrega en cualquier destino.
@@ -32,15 +32,15 @@
             cols="12"
             md="6"
           >
-            <v-card>
-              <v-img
-                :src="this.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                max-height="450px"
-                min-height="300"
-              ></v-img>
-            </v-card>
+
+            <v-img
+              :src="this.src"
+              class="white--text align-end"
+              max-height="450px"
+              min-height="300"
+              contain
+            ></v-img>
+
           </v-col>
         </v-row>
       </v-container>

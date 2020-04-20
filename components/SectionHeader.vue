@@ -1,5 +1,5 @@
 <template>
-  <div class="section-header text-center mb-12">
+  <div class="section-header text-center ">
     <div
       class="text-uppercase caption mb-4 grey--text text--darken-2"
       v-text="header"
@@ -21,27 +21,27 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      header: {
-        type: String,
-        default: ''
-      },
-      subHeader: {
-        type: String,
-        default: ''
-      },
-      text: {
-        type: String,
-        default: ''
-      }
+export default {
+  props: {
+    header: {
+      type: String,
+      default: ""
+    },
+    subHeader: {
+      type: String,
+      default: ""
+    },
+    text: {
+      type: String,
+      default: ""
     }
   }
+};
 </script>
 
 <style lang="sass">
-  .section-header
-    .v-divider
-      border-width: 1px
-      max-width: 50px
+.section-header
+  .v-divider
+    border-width: 1px
+    max-width: 50px
 </style>

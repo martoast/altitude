@@ -4,7 +4,7 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107683.0462265597!2d-117.01784697721322!3d32.49688473900214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9390226587bd3%3A0x14724bafa4e62456!2sTijuana%2C%20Baja%20California!5e0!3m2!1sen!2smx!4v1582248134990!5m2!1sen!2smx"
         width="100%"
-        height="600"
+        height="300"
         frameborder="0"
         style="border:0"
         allowfullscreen
@@ -12,6 +12,7 @@
     </section>
 
     <section>
+
       <v-container>
         <v-row justify="center">
           <v-col
@@ -36,8 +37,13 @@
         </v-row>
       </v-container>
     </section>
+    <div>
+      <section>
+        <Netlify />
+      </section>
+    </div>
 
-    <section>
+    <!-- <section>
       <v-form
         name="contactus"
         action="/thanks"
@@ -92,17 +98,25 @@
 
         </v-container>
       </v-form>
-    </section>
+    </section> -->
   </div>
 </template>
 
 <script>
+import Netlify from "~/components/netlify-form.vue";
 export default {
+  components: {
+    Netlify
+  },
   data: () => ({
     details: [
-      ["mdi-crosshairs-gps", "2365 palomira Ct", "San Diego, CA 91915"],
-      ["mdi-email", "info@example.com", "contact@example.com"],
-      ["mdi-phone", "+1 (321) 383-4531", ""]
+      [
+        "mdi-crosshairs-gps",
+        "Miguel Aleman 2678 Colonia America ",
+        "Tijuana BC 22044"
+      ],
+      ["mdi-email", "LAE Alejandro Martos", "amartos765@outlook.com"],
+      ["mdi-phone", "001 (619) 559-1920", ""]
     ]
   })
 };

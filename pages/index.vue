@@ -7,6 +7,7 @@
 
     <section>
       <div>
+
         <Blog2 />
       </div>
     </section>
