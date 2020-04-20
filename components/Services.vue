@@ -39,7 +39,7 @@
               </v-theme-provider>
 
               <v-card-title
-                class="justify-center font-weight-black text-uppercase"
+                class="justify-center font-weight-black "
                 v-text="title"
               ></v-card-title>
 
@@ -71,7 +71,7 @@ export default {
       features: [
         {
           icon: "mdi-truck",
-          title: "Importacion / Exportacion",
+          title: "Importacion/Exportacion",
           route: "/services/seo",
           text:
             "Contamos con servicios de agentes aduanales en diferentes fronteras. "
@@ -81,7 +81,7 @@ export default {
           route: "/services/web-development/",
           title: "Busqueda de Productos",
           text:
-            "Tenemos acceso a diferentes provedores de todo tipo de maquinaria y equipo para satisfacer tus necesidades."
+            "Tenemos acceso a diferentes proveedores de todo tipo de maquinaria y equipo para satisfacer tus necesidades."
         },
         {
           icon: "mdi-math-compass",

@@ -23,7 +23,7 @@
 
             <h2 class="headline font-weight-light">
               Ofrecer el mejor servicio de compra y venta de equipo y maquinaria que satisfaga las
-              necesidades de nuestros clientes y desarollar una logistica para trasporte
+              necesidades de nuestros clientes y desarollar una logistica para trasporte,
               importación y entrega en cualquier destino.
             </h2>
 

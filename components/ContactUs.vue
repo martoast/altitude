@@ -32,15 +32,13 @@
 
                   <v-col cols="12">
                     <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6728.567726114801!2d-117.02463114134795!3d32.518564747361815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94847c29c4481%3A0x75b7fbdf3b28267f!2sMiguel%20Alem%C3%A1n%20Valdez%202678%2C%20America%2C%2022044%20Tijuana%2C%20B.C.!5e0!3m2!1sen!2smx!4v1587415743579!5m2!1sen!2smx"
                       width="100%"
-                      height="600"
-                      id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=V%C3%ADa%20R%C3%A1pida%20Ote.%2015000%2C%20Chapultepec%20Alamar%2C%2022150%20Tijuana%2C%20B.C.&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      height="300"
                       frameborder="0"
-                      scrolling="no"
-                      marginheight="0"
-                      marginwidth="0"
-                    ></iframe>
+                      style="border:0"
+                      allowfullscreen
+                    />
                   </v-col>
                 </v-row>
               </v-container>
