@@ -22,7 +22,6 @@
               class="py-8 px-4"
               color="grey lighten-5"
               flat
-              :to="route"
             >
               <v-theme-provider dark>
                 <div>

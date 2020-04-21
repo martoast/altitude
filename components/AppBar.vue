@@ -9,7 +9,7 @@
       light
     >
       <VuetifyLogo />
-      <v-toolbar-title>Altitude Exports Mexico</v-toolbar-title>
+      <v-toolbar-title class="subtitle-2">Altitude Exports Mexico</v-toolbar-title>
 
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
