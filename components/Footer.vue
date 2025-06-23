@@ -24,7 +24,7 @@
       <v-col
         class="text-center blue-grey darken-4 pa-3"
         cols="12"
-      >&copy; 2020 Altitude Exports Mexico — All Rights reserved.</v-col>
+      >&copy; 2025 Altitude Exports Mexico — All Rights reserved.</v-col>
     </v-row>
   </v-footer>
 </template>
