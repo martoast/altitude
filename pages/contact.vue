@@ -101,7 +101,7 @@ export default {
         "Miguel Aleman 2678 Colonia America ",
         "Tijuana BC 22044"
       ],
-      ["mdi-email", "LAE Alejandro Martos", "amartos765@outlook.com"],
+      ["mdi-email", "LAE Alejandro Martos", "amartos0731@gmail.com"],
       ["mdi-phone", "001 (619) 559-1920", ""]
     ]
   })
